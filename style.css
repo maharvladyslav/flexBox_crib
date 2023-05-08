@@ -1,0 +1,44 @@
+/* Скидання стилів */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+/* Візуальні стилі */
+.container {
+  background-color: rgb(74, 74, 242);
+  padding: 15px;
+  height: 400px;
+}
+.box {
+  height: 100px;
+  width: 150px;
+  background-color: rgb(225, 255, 0);
+  border-radius: 10px;
+}
+
+/* Застосовуємо flexbox */
+.container {
+  display: flex;
+  /* Керуємо напрямком головної вісі */
+  flex-direction: row;
+  /* Керуємо елементами за напрямком головної вісі */
+  justify-content: space-between;
+  /* Керуємо елементами за напрямком поперечної вісі */
+  align-items: center;
+  /* Дозволяємо елементам займати додаткові рядки */
+  flex-wrap: wrap;
+  /* Задаємо відступи між рядками */
+  row-gap: 20px;
+  /* Задаємо відступи між колонками */
+  column-gap: 20px;
+  /* Керуємо всіма рядками за напрямком поперечної осі */
+  align-content: flex-start;
+}
+/* Для центрування контенту можна теж використати flexbox */
+.box {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 30px;
+}
